@@ -58,7 +58,7 @@ const Arena = ({ characterNFT, setCharacterNFT }) => {
         gameContract.off("AttackComplete", onAttackComplete);
       }
     }
-  }, [gameContract]);
+  }, [gameContract, setCharacterNFT]);
 
   const runAttackAction = async () => {
     try {
